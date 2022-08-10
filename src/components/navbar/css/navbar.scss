@@ -1,0 +1,49 @@
+
+.navbar-wraper{
+    padding:0 1.5rem;
+    height: 4rem;
+    background-color: var(--blue);
+    .rounded-image{
+        width: 35px;
+        height: 35px;
+        margin-right: .6rem;
+    }
+    .rounded-icon{
+        font-size:1.4rem;
+        color: var(--white);
+    }
+    .nav-link{
+        color: var(--white);
+    }
+}
+
+ul{
+    margin:0;
+    padding:0;
+    display:flex;
+    li{
+        padding:1rem;
+    }
+    .nav-link{
+        text-decoration: none;
+    }
+}
+
+.badge-card{
+    margin:0 1rem;
+    position:relative;
+    span{
+        width:20px;
+        height:20px;
+        align-items: center;
+        justify-content: center;
+        display: flex;
+        font-size: 70%;
+        border-radius: 50%;
+        color: var(--white);
+        background-color: red;
+        position: absolute;
+        top:0;
+        right:-10px;
+    }
+}

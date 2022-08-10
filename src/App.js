@@ -1,25 +1,31 @@
-import logo from './logo.svg';
-import './App.css';
+import {Route} from 'react-router-dom'
+import Home from './pages/main'
+import Navbar from './components/navbar'
+import Sidebar from './components/sidebar';
+import Conversation from './pages/messages/Conversation';
+import Login from './pages/forms/Login';
+import Profile from './pages/profile';
+
 
 function App() {
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <>
+    <div className='app-outer-wraper'>
+      <Navbar />
+      <div className='app-wraper d-flex'>
+        <Sidebar />
+        <div className='app-content'>
+          <Route path='/' element={Home} />
+          <Route path='/users/profile/:userId' element={Profile} />
+          <Route path='/login' element={Login} />
+          <Route path='/messages/conversation/:conversationId' element={Conversation} />
+        </div>
+      </div>
     </div>
+    </>
   );
 }
+
 
 export default App;

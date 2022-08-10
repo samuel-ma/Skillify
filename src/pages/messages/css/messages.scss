@@ -1,0 +1,62 @@
+
+.conversation-container{
+    padding:0 1.5rem 1rem 1.5rem;
+    min-height:calc(100vh - 4.5rem);
+    max-height:calc(100vh - 4.5rem);
+}
+
+.conversation-header{
+    padding:.5rem;
+    // background-color: rgb(243, 242, 242);
+    border-bottom:2px solid #eee;
+    .rounded-icon{
+        margin-left: 1rem;
+        background-color: rgb(230, 227, 227);
+    }
+}
+.conversation-sidebar{
+    flex-basis: 40%;
+}
+
+
+.message-card{
+    margin-bottom: 1rem;
+    .message-text{
+        height: max-content;
+        margin:0 1rem;
+        padding:.5rem .8rem;
+        flex:1;
+        border-radius: 6px;
+        background-color: var(--white);
+    }
+    .message-text.me{
+        color: var(--white);
+        background-color: var(--lightblue);
+    }
+}
+
+
+.conversation-form{
+    form{
+        padding: .4rem;
+        background-color: var(--white);
+        border-radius: 1.5rem;
+    }
+    textarea, button{
+        padding:.6rem;
+        height: 2.5rem;
+        border:none;
+        background-color: transparent;
+        outline: none;
+    }
+    textarea{
+        flex:1;
+    }
+    button{
+        width: 2.5rem;
+        background-color: var(--blue);
+        color:#fff;
+        box-shadow: 3px 3px 5px rgba(0,0,0,.4);
+        border-radius: 50%;
+    }
+}

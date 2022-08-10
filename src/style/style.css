@@ -1,0 +1,144 @@
+@font-face {
+  font-family: "Staatliches";
+  src: url("../assets/fonts/Staatliches-Regular.ttf");
+}
+@font-face {
+  font-family: "Southmore";
+  src: url("../assets/fonts/Southmore.ttf");
+}
+@font-face {
+  font-family: "SignikaNegative";
+  src: url("../assets/fonts/SignikaNegative-SemiBold.ttf");
+}
+@font-face {
+  font-family: "SignikaNegative-Light";
+  src: url("../assets/fonts/SignikaNegative-Light.ttf");
+}
+::-webkit-scrollbar {
+  display: none !important;
+}
+
+::-webkit-scrollbar:hover {
+  display: block !important;
+}
+
+:root {
+  --blue:rgb(76, 129, 197);
+  --lightblue:rgb(101, 157, 231);
+  --gradient: linear-gradient(160deg, rgb(65, 143, 245), rgb(196, 115, 243));
+  --white:#fff;
+  --gray:rgb(239, 241, 233);
+  --lightgray:rgb(243, 245, 239);
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  color: #777;
+  background-color: var(--gray);
+  font-family: "SignikaNegative";
+}
+
+img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: fill;
+     object-fit: fill;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+  padding: 0;
+  margin: 0;
+}
+
+.elips-text {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 1;
+  overflow: hidden;
+}
+
+.elips-text.l2 {
+  -webkit-line-clamp: 2;
+}
+
+.elips-text.l3 {
+  -webkit-line-clamp: 3;
+}
+
+.app-wraper {
+  padding: 0.5rem 1rem 0 1rem;
+}
+
+.app-content {
+  flex: 1;
+}
+
+.rounded-icon {
+  width: 35px;
+  height: 35px;
+  font-size: 120%;
+}
+
+.list-item-card {
+  padding: 0.5rem;
+  text-decoration: none;
+  color: inherit;
+}
+.list-item-card .list-item-text {
+  margin-left: 1rem;
+  text-decoration: none;
+  color: inherit;
+}
+.list-item-card:hover {
+  color: var(--white);
+  background-color: var(--blue);
+}
+
+.user-avatar {
+  border-radius: 50%;
+}
+.user-avatar img {
+  width: 40px;
+  height: 40px;
+}
+
+.user-avatar.active {
+  position: relative;
+}
+
+.user-avatar.active::after {
+  content: "";
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background-color: rgb(0, 238, 0);
+  position: absolute;
+  bottom: 6px;
+  right: -5px;
+}
+
+.d-flex {
+  display: flex;
+}
+
+.align-items-center {
+  align-items: center;
+}
+
+.justify-content-between {
+  justify-content: space-between;
+}
+
+.justify-content-center {
+  justify-content: center;
+}
+
+.rounded-circle {
+  border-radius: 50%;
+  overflow: hidden;
+}/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,23 @@
+.profile-container {
+  background-color: var(--white);
+}
+
+.profile-header {
+  padding: 1rem;
+  color: var(--white);
+  background-color: var(--lightblue);
+}
+.profile-header .user-avatar img {
+  width: 140px;
+  height: 140px;
+}
+.profile-header .text-content {
+  margin-left: 1rem;
+}
+.profile-header h1 {
+  font-size: 3.5rem;
+}
+
+.app-inner-sidebar.profile {
+  flex-basis: 40%;
+}/*# sourceMappingURL=profile.css.map */

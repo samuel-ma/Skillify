@@ -1,0 +1,32 @@
+.sidebar-container, .app-inner-sidebar {
+  height: calc(100vh - 4.5rem);
+}
+
+.sidebar-content {
+  padding: 1rem;
+  background-color: var(--white);
+}
+
+.search-bar-container {
+  margin-bottom: 1rem;
+  background-color: var(--gray);
+  border-radius: 6px;
+  overflow: hidden;
+}
+.search-bar-container input, .search-bar-container button {
+  padding: 0.5rem;
+  height: 2.5rem;
+  border: none;
+  background-color: transparent;
+}
+.search-bar-container input {
+  flex: 1;
+}
+
+.sidebar-container {
+  flex-basis: 25%;
+}
+
+.app-inner-sidebar {
+  flex-basis: 30%;
+}/*# sourceMappingURL=sidebar.css.map */

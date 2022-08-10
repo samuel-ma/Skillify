@@ -1,0 +1,59 @@
+.conversation-container {
+  padding: 0 1.5rem 1rem 1.5rem;
+  min-height: calc(100vh - 4.5rem);
+  max-height: calc(100vh - 4.5rem);
+}
+
+.conversation-header {
+  padding: 0.5rem;
+  border-bottom: 2px solid #eee;
+}
+.conversation-header .rounded-icon {
+  margin-left: 1rem;
+  background-color: rgb(230, 227, 227);
+}
+
+.conversation-sidebar {
+  flex-basis: 40%;
+}
+
+.message-card {
+  margin-bottom: 1rem;
+}
+.message-card .message-text {
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
+  margin: 0 1rem;
+  padding: 0.5rem 0.8rem;
+  flex: 1;
+  border-radius: 6px;
+  background-color: var(--white);
+}
+.message-card .message-text.me {
+  color: var(--white);
+  background-color: var(--lightblue);
+}
+
+.conversation-form form {
+  padding: 0.4rem;
+  background-color: var(--white);
+  border-radius: 1.5rem;
+}
+.conversation-form textarea, .conversation-form button {
+  padding: 0.6rem;
+  height: 2.5rem;
+  border: none;
+  background-color: transparent;
+  outline: none;
+}
+.conversation-form textarea {
+  flex: 1;
+}
+.conversation-form button {
+  width: 2.5rem;
+  background-color: var(--blue);
+  color: #fff;
+  box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.4);
+  border-radius: 50%;
+}/*# sourceMappingURL=messages.css.map */
