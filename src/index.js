@@ -1,6 +1,6 @@
 import React from 'react'
 import ReactDOM from 'react-dom';
-import { BrowserRouter, BrowserRouter as Router, Routes } from 'react-router-dom';
+import { BrowserRouter} from 'react-router-dom';
 import SocketContextProvider from './contexts/SocketContextProvider'
 import ProfileContextProvider from './contexts/ProfileContextProvider'
 import UserContextProvider from './contexts/UserContextProvider'
