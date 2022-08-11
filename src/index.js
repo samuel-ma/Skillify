@@ -1,6 +1,6 @@
 import React from 'react'
 import ReactDOM from 'react-dom';
-import { BrowserRouter as Router, Routes } from 'react-router-dom';
+import { BrowserRouter, BrowserRouter as Router, Routes } from 'react-router-dom';
 import SocketContextProvider from './contexts/SocketContextProvider'
 import ProfileContextProvider from './contexts/ProfileContextProvider'
 import UserContextProvider from './contexts/UserContextProvider'
@@ -10,8 +10,7 @@ import './style/style.css'
 
 ReactDOM.render(
   <React.StrictMode>
-    <Router>
-      <Routes>
+    <BrowserRouter>
         <ProfileContextProvider>
           <SocketContextProvider>
             <UserContextProvider>
@@ -21,8 +20,7 @@ ReactDOM.render(
             </UserContextProvider>
           </SocketContextProvider>
         </ProfileContextProvider>
-      </Routes>
-    </Router>
+      </BrowserRouter>
     </React.StrictMode>,
   document.getElementById('root')
 );

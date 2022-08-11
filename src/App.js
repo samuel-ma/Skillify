@@ -1,4 +1,4 @@
-import {Route} from 'react-router-dom'
+import {Route, Routes} from 'react-router-dom'
 import Home from './pages/main'
 import Navbar from './components/navbar'
 import Sidebar from './components/sidebar';
@@ -16,10 +16,12 @@ function App() {
       <div className='app-wraper d-flex'>
         <Sidebar />
         <div className='app-content'>
-          <Route path='/' element={Home} />
-          <Route path='/users/profile/:userId' element={Profile} />
-          <Route path='/login' element={Login} />
-          <Route path='/messages/conversation/:conversationId' element={Conversation} />
+          <Routes>
+            <Route path='/' element={<Home/>} />
+            <Route path='/users/profile/:userId' element={<Profile/>} />
+            <Route path='/login' element={<Login/>} />
+            <Route path='/messages/conversation/:conversationId' element={<Conversation/>} />
+          </Routes>
         </div>
       </div>
     </div>
