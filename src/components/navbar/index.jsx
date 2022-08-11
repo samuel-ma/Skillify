@@ -23,10 +23,10 @@ export default function Navbaer() {
               <NavLink className='nav-link' to='/library'>Library</NavLink>
             </li>
             <li className="nav-item">
-              <NavLink className='nav-link' to='/'>Home</NavLink>
+              <NavLink className='nav-link' to='/'>Messages</NavLink>
             </li>
             <li className="nav-item">
-              <NavLink className='nav-link' to='/library'>Library</NavLink>
+              <NavLink className='nav-link' to='/library'>Friends</NavLink>
             </li>
           </ul>
         </div>
